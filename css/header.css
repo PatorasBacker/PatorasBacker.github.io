@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica , "游ゴシック", sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 2px 1rem var(--dark-026);
+  
+  }
+  .nav-list {
+      right: 0%;
+      line-height: 100px;
+      list-style: none;
+      overflow:hidden;
+      display: flex;
+  }
+  .nav-list-item {
+      margin-top: 50px;
+      width: 100px;
+      overflow: hidden;
+      position:relative;
+      float: left;
+  }
+  .nav-list-item {
+      width: 230px;
+      overflow: hidden;
+    }
+    .nav-list-item img {
+      opacity: 0.7;
+      width: 230px;
+      transition: all 0.5s;
+    }
+    .nav-list-item img:hover {
+      opacity: 1.0;
+      transform: scale(1.1, 1.1);
+    }
+  .log {
+      width: 200px;
+      margin-top: 90px;
+      overflow: hidden;
+      position:relative;
+      left: 50px;
+      top: -40px;
+      }
+    .log img {
+      opacity: 0.7;
+      width: 200px;
+      transition: all 0.5s;
+    }
+    footer {
+        width: 100%;
+        height: 130px; 
+        text-align: center;
+        padding: 50px 0;
+        background: white;
+      }
+      .footer-text {
+        color: #fff;
+      }

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica , "游ゴシック", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 2px 1rem var(--dark-026);
+
+}
+.nav-list {
+    right: 0%;
+    line-height: 100px;
+    list-style: none;
+    overflow:hidden;
+    display: flex;
+}
+.nav-list-item {
+    margin-top: 50px;
+    height: 100%;
+    overflow: hidden;
+    position:relative;
+    float: left;
+}
+.nav-list-item {
+    width: 230px;
+    overflow: hidden;
+  }
+  .nav-list-item img {
+    opacity: 0.7;
+    width: 230px;
+    transition: all 0.5s;
+  }
+  .nav-list-item img:hover {
+    opacity: 1.0;
+    transform: scale(1.1, 1.1);
+  }
+.log {
+    width: 200px;
+    margin-top: 90px;
+    overflow: hidden;
+    position:relative;
+    left: 50px;
+    top: -40px;
+    }
+  .log img {
+    opacity: 0.7;
+    width: 200px;
+    transition: all 0.5s;
+  }
+
+#gallery {
+    font-family: Arial, "ＭＳ Ｐゴシック", sans-serif;
+    display: flex;    
+    flex-flow: wrap;  
+    margin-top: 100px;
+  }
+  #gallery dl {
+    flex: 300px;      
+    width: 200px;   
+    padding: 0;
+    text-align: center;  
+    box-sizing: border-box;
+  }
+  #gallery:after { 
+    content: "";
+    flex: 200px;
+    margin-right: 5px;
+    display: block;
+  }
+  #gallery dl img {
+    border: 3px solid #ffffff;
+    width: 300px;
+    margin-top: 0.5vh;
+    margin-left: 2%;
+  }
+#top {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+}
+
+#top>h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 1px 1px 3px #ffffff, -1px -1px 0px #ebebeb;
+}
+h1{
+  margin-top: 100px;
+  margin-left: 30px;
+  font-size: 5rem auto;
+  text-align: left;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.5;
+  text-shadow: 3px 3px 3px #000;
+  white-space: nowrap;
+}
+h2{
+  margin-left: 30px;
+  font-size: 5rem auto;
+  text-align: left;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5;
+  text-shadow: 3px 3px 3px #000;
+  white-space: nowrap;	
+}
+body {
+  background-image: url("../image/gallery/bg.png");  /* 背景画像設定 */
+  background-size: cover; /* 背景画像のサイズを全体にフィットするように設定 */
+  background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
+}
+.div{
+  margin-bottom: 100px;
+}
