@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica , "游ゴシック", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 2px 1rem var(--dark-026);
+
+}
+.nav-list {
+    right: 0%;
+    line-height: 100px;
+    list-style: none;
+    overflow:hidden;
+    display: flex;
+}
+.nav-list-item {
+    margin-top: 50px;
+    height: 100%;
+    overflow: hidden;
+    position:relative;
+    float: left;
+}
+.nav-list-item {
+    width: 230px;
+    overflow: hidden;
+  }
+  .nav-list-item img {
+    opacity: 0.7;
+    width: 230px;
+    transition: all 0.5s;
+  }
+  .nav-list-item img:hover {
+    opacity: 1.0;
+    transform: scale(1.1, 1.1);
+  }
+.log {
+    width: 200px;
+    margin-top: 90px;
+    overflow: hidden;
+    position:relative;
+    left: 50px;
+    top: -40px;
+    }
+  .log img {
+    opacity: 0.7;
+    width: 200px;
+    transition: all 0.5s;
+  }
+#top {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+}
+
+#top>h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 1px 1px 3px #ffffff, -1px -1px 0px #ebebeb;
+}
+/* アイコン */
+
+
+  body {
+    background-image: url("../image/backgrand.png");  /* 背景画像設定 */
+    background-size: cover; /* 背景画像のサイズを全体にフィットするように設定 */
+    background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
+  }
+  main {
+    display: flex; /* この要素の内部の表示をフレキシブルに変更可能とする */
+    justify-content: center; /* 内部要素を中央揃え */
+    align-items: center; /* 内部要素を中央揃え */
+    height: 100vh; /* 高さを画面の高さに揃える */
+  }
+  
+  /* モバイルでの表示時にレイアウトを変更する */
+  @media screen and (max-width: 896px) {
+    main {
+      flex-direction: column; /* 横並びを縦並びに変更する */
+    }
+  }
+
+  /* class="profile-photo" の中の img */
+.profile-photo img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 300px; /* 横幅の設定 */
+    height: 300px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を50%で指定することで正方形の画像は円にくり抜かれる */
+  }
+
+  .profile-text {
+    padding: 2rem; /* 基準文字サイズの2文字分内側に余白を設定 */
+    color: rgb(255, 255, 255); /* 文字色を設定(任意の文字色に変えて良い) */
+    display: inline-block;
+  }
+  .my_profile {
+    font-size: 30px;
+    padding: 2rem; /* 基準文字サイズの2文字分内側に余白を設定 */
+    color: rgb(255, 255, 255); /* 文字色を設定(任意の文字色に変えて良い) */
+    display: inline-block;
+    white-space: nowrap;
+  }
+  h1 {
+    font-size: 4rem auto; /* 文字サイズを基準サイズの400%とする */
+    letter-spacing: 0.1em; /* 字間を0.1文字分開ける */
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .social {
+    list-style: none; /* リストの・が邪魔なので消します */
+    display: flex; /* フレキシブルに */
+    margin-top: 1.5rem; /* 上部に1.5文字分の外部余白を設定 */
+  }
+
+  /* class="social"の中のli */
+.social li {
+    line-height: 1; /* 文字高さを1文字分とする */
+    padding: 0.5rem;  /* 上下左右に0.5文字分の内部余白をつける */
+    font-size: 1.5rem; /* アイコン(文字)のサイズを1.5文字分とする */
+  }
+
+  /* class="social"の中のliの中のa */
+.social li a {
+    text-decoration: none;  /* リンクテキストの装飾をなくす */
+    color: #fff;  /* 文字色変更(任意の文字色に変えて良い) */
+    transition: 1s color; /* 文字色が変化する場合、１秒かけて変化させる定義 */
+  }
+  /* class="social"の中のliの中のaにマウスカーソルが乗った時 */
+.social li a:hover {
+    color: rgb(54, 88, 199);  /* 文字色を変える(任意の文字色に変えて良い) */
+  }
+
+  .background-filter {
+    width: 100%;
+    height: 100%;
+    position: fixed; /* 配置を固定 */
+    top: 0; /* 上部の位置を設定 */
+    left: 0; /* 左側の位置を設定 */
+    z-index: -1; /* 重なりの位置をmainコンテンツの後ろに設定 */
+    background-attachment: fixed;
+    opacity: 0.75; /* 透明度を75%に設定 */
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); /* 背景をグラデーションで設定 */
+  }
+
+  .profile-photo {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+  }
+
+
+  /* rotationという名前のアニメーションを作成 */
+@keyframes rotation {
+    from {  /* 開始時点の装飾 */
+      transform: rotate(0deg);  /* 変形操作の内、回転0度 */
+    }
+  
+    to {  /* 終了時点の装飾 */
+      transform: rotate(360deg); /* 変形操作の内、回転360度 */
+    }
+  }
+
+  .profile-text {
+    max-width: 600px;
+    padding: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 5rem auto;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+    white-space: nowrap;	
+  }
+
+  .social li a {
+    text-decoration: none;
+    color: rgb(10, 4, 94);
+    transition: 1s color;
+  }
